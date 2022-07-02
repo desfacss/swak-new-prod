@@ -1,28 +1,34 @@
 module.exports = ({env}) => ({
-    email: {
-      config: {
-        provider: 'strapi-provider-email-sendinblue',
-        providerOptions: {
-          sendinblue_api_key: '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',
-          sendinblue_default_replyto: 'swakruta.app@gmail.com',
-          sendinblue_default_from: 'swakruta.app@gmail.com',
-          sendinblue_default_from_name: 'Swakruta Team',
-        },
+  email: {
+    config: {
+      provider: 'strapi-provider-email-sendinblue',
+      providerOptions: {
+        sendinblue_api_key: env('SIB_API_KEY'),
+        sendinblue_default_replyto: env('SIB_DEFAULT_REPLY_TO', 'contact@example.com'),
+        sendinblue_default_from: env('SIB_DEFAULT_FROM', 'no-reply@example.com'),
+        sendinblue_default_from_name: env('SIB_DEFAULT_FROM_NAME', 'Sender Name'),
       },
     },
-    upload: {
-      config: {
-        provider: 'cloudinary',
-        providerOptions: {
-          cloud_name: 'swakruta-in',
-          api_key: '512365734132185',
-          api_secret: '6YIrEJUMck5ACvoeCuYDujzaiLo',
-        },
-        actionOptions: {
-          upload: {},
-          delete: {},
-        },
+  },
+  upload: {
+    config: {
+      provider: 'cloudinary',
+      providerOptions: {
+        cloud_name: env('CLOUDINARY_NAME'),
+        api_key: env('CLOUDINARY_KEY'),
+        api_secret: env('CLOUDINARY_SECRET'),
       },
-    }
-  });
+      actionOptions: {
+        upload: {},
+        delete: {},
+      },
+    },
+  },
+  seo: {
+    enabled: true,
+  },
+  "content-versioning": {
+        enabled:  true,
+  },
+});
 

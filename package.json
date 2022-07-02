@@ -10,8 +10,9 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "@notum-cz/strapi-plugin-content-versioning": "^0.4.3",
     "@strapi/plugin-i18n": "4.1.1",
-    "@strapi/plugin-seo": "^1.7.2",
+    "@strapi/plugin-seo": "^1.7.3",
     "@strapi/plugin-users-permissions": "4.1.1",
     "@strapi/provider-upload-cloudinary": "^4.2.2",
     "@strapi/strapi": "4.2.2",

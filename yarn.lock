@@ -2710,6 +2710,15 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@notum-cz/strapi-plugin-content-versioning@^0.4.3":
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/@notum-cz/strapi-plugin-content-versioning/-/strapi-plugin-content-versioning-0.4.3.tgz#50d3a1f766a61761cddc273eaf3545ed415b7c50"
+  integrity sha512-nkLGpcD3MFeFOlLCh4tNVbI7yOepcFJALeE73hvQnP2BtzngT76xP1/buLwmaHlHDpCCBYs0tmMrDAInv80ppw==
+  dependencies:
+    "@strapi/utils" "^4.0.0"
+    lodash "^4.17.21"
+    uuid "^8.3.2"
+
 "@pmmmwh/react-refresh-webpack-plugin@0.5.4":
   version "0.5.4"
   resolved "https://registry.yarnpkg.com/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.5.4.tgz#df0d0d855fc527db48aac93c218a0bf4ada41f99"
@@ -3127,10 +3136,10 @@
     "@strapi/utils" "4.1.1"
     lodash "4.17.21"
 
-"@strapi/plugin-seo@^1.7.2":
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/@strapi/plugin-seo/-/plugin-seo-1.7.2.tgz#fd90a5fa0f58b6b841498f76dd0d730b7bf70663"
-  integrity sha512-1c0ZbAKDoje07E2tZeyejq1jvmu6veo0sfPK39n8reZNmHfa/xMjcc6EOH1Po5qQGSlOviswj2uizUCMiXB97A==
+"@strapi/plugin-seo@^1.7.3":
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/@strapi/plugin-seo/-/plugin-seo-1.7.3.tgz#94b3c647a199544d40b78940b83ee7ad6a8f6159"
+  integrity sha512-4SNFHljS3OirgQgFF68BfysB3vHu2X7pF1Pco7Gs0gatebshsTtg1PsHihKd2j07CkEfdxpRSt9wVknwabb7HA==
   dependencies:
     eslint-plugin-react-hooks "^4.3.0"
     lodash "^4.17.21"
@@ -3279,7 +3288,7 @@
     lodash "4.17.21"
     yup "0.32.9"
 
-"@strapi/utils@4.2.2":
+"@strapi/utils@4.2.2", "@strapi/utils@^4.0.0":
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/@strapi/utils/-/utils-4.2.2.tgz#cee826f3a78fa2279f39c5d1e32ef578fa8df4b8"
   integrity sha512-ivVNC2QD4MZYCJXbPN3fYMXXziOunz+N578CZ2DKkv7QMA5PB1oS0tZpkrxVkaEC6k0D86Ie7tNavR/tEO3MCA==

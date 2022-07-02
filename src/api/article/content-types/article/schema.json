@@ -66,9 +66,9 @@
       },
       "type": "dynamiczone",
       "components": [
-        "blocks.related-articles",
+        "blocks.cta-command-line",
         "blocks.faq",
-        "blocks.cta-command-line"
+        "blocks.related-articles"
       ],
       "required": false
     },
